@@ -1,0 +1,30 @@
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>
+      Tên Sách
+      <br>
+      <input type="text" formControlName="title">
+    </label>
+  </div>
+<div>
+  <label>
+    Tác Giả
+    <br>
+    <input type="text" formControlName="author">
+  </label>
+</div>
+<!--  <div *ngIf="postForm.get('title').invalid && postForm.get('title').touched" style="color: red">-->
+<!--    Title is required and min length is 10-->
+<!--  </div>-->
+  <div>
+    <label>
+      Mô Tả
+      <br>
+      <textarea formControlName="description" cols="30" rows="10"></textarea>
+    </label>
+  </div>
+<!--  <div *ngIf="postForm.get('body').invalid && postForm.get('body').touched" style="color: red">-->
+<!--    Body is required and min length is 10-->
+<!--  </div>-->
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
