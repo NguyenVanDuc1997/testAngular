@@ -28,6 +28,6 @@ export class BookService {
   }
 
   updateBook(book: Ibook): Observable<Ibook> {
-    return this.http.patch<Ibook>(`${this.API_URL}/${book.id}`, book);
+    return this.http.put<Ibook>(`${this.API_URL}/${book.id}`, book);
   }
 }

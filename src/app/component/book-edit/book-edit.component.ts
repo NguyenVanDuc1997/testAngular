@@ -46,7 +46,7 @@ export class BookEditComponent implements OnInit {
       };
       this.bookService.updateBook(data).subscribe(
         next => {
-          this.router.navigate(['/blog']);
+          this.router.navigate(['/books']);
         },
         error => console.log(error)
       );

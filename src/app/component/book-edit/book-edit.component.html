@@ -3,14 +3,14 @@
     <label>
       Tên Sách
       <br>
-      <input type="text" formControlName="title">
+      <input type="text" formControlName="title" required="required">
     </label>
   </div>
   <div>
     <label>
       Tác Giả
       <br>
-      <input type="text" formControlName="author">
+      <input type="text" formControlName="author" required="required">
     </label>
   </div>
   <!--  <div *ngIf="postForm.get('title').invalid && postForm.get('title').touched" style="color: red">-->
@@ -20,7 +20,7 @@
     <label>
       Mô Tả
       <br>
-      <textarea formControlName="description" cols="30" rows="10"></textarea>
+      <textarea formControlName="description" cols="30" rows="10" required="required"></textarea>
     </label>
   </div>
   <!--  <div *ngIf="postForm.get('body').invalid && postForm.get('body').touched" style="color: red">-->
